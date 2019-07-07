@@ -73,3 +73,5 @@ end
 # End of installation of Bootstrap
 
 gem 'simple_form'
+
+gem 'devise'
