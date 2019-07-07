@@ -23,7 +23,7 @@
               <a class="nav-link" href="#">Link</a>
             </li>
           </ul>
-          <ul class = "navbar-nav">
+          <ul class = "nav navbar-nav float-lg-right">
             <% if user_signed_in? %>
               <li class = "nav-item">
                 <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
@@ -52,9 +52,9 @@
 
     <div id = "footer">
       <div class = "container">
-        <b>Footer Here</b>
+        <b>Teachers</b>
         <br />
-        <%= link_to 'Link', '#' %>
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
       </div>
     </div>
   </body>
