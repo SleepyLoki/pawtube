@@ -74,10 +74,6 @@ body{
   margin: 10px;
 }
 
-.btn-primary{
-  background-color: #6F26D7;
-}
-
 .sign-background{
   background: image_url('sign-bg.png');
   color: white;
@@ -94,4 +90,13 @@ body{
 
 .clr {
   clear: both;
+}
+
+.courses-title{
+  color: #0651ad;
+}
+
+.courses-title:hover {
+  text-decoration: none;
+  color: #b86800;
 }
