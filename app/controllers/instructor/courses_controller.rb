@@ -16,7 +16,9 @@ class Instructor::CoursesController < ApplicationController
   end
 
   def show
-    @photo = Photo.new
+    @section = Section.new
+    @lesson = Lesson.new
+    @course = Course.find(params[:id])
   end
 
   private
@@ -33,6 +35,6 @@ class Instructor::CoursesController < ApplicationController
   end
 
   def course_params
-    params.require(:course).permit(:title, :description, :cost)
+    params.require(:course).permit(:title, :description, :cost, :image)
   end
 end
