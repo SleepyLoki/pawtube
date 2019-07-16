@@ -5,7 +5,7 @@
   <%= link_to 'Preview As Student...', course_path(current_course), class: 'btn btn-warning float-right' %>
   <br class = "clr" />
 
-  <%= simple_form_for @photo, url: '#' do |f| %>
+  <%= simple_form_for @photo, url: course_photos_path(current_course) do |f| %>
     <%= f.input :caption %>
     <%= f.submit "Add Photo", class: 'btn btn-primary' %>
   <% end %>

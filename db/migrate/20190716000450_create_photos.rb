@@ -5,5 +5,7 @@ class CreatePhotos < ActiveRecord::Migration[5.2]
       t.integer :course_id
       t.timestamps
     end
+
+    add_index :photos, :course_id
   end
 end

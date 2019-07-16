@@ -1,12 +1,12 @@
-class Instructor::SectionsController < ApplicationController
+class PhotosController < ApplicationController
   before_action :authenticate_user!
 
   def new
-    @section = Section.new
+    @photo = Photo.new
   end
 
   def create
-    @section = current_course.sections.create(section_params)
+    @photo = current_course.photos.create(photo_params)
     redirect_to instructor_course_path(current_course)
   end
 
@@ -17,7 +17,8 @@ class Instructor::SectionsController < ApplicationController
     @current_course ||= Course.find(params[:course_id])
   end
 
-  def section_params
-    params.require(:section).permit(:title)
+  def photo_params
+    params.require(:photo).permit(:caption)
   end
+
 end
