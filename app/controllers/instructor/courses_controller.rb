@@ -16,6 +16,7 @@ class Instructor::CoursesController < ApplicationController
   end
 
   def show
+    @photo = Photo.new
   end
 
   private
