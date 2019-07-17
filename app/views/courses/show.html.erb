@@ -2,9 +2,7 @@
 
 <div class = "booyah-box col-10 offset-1">
   <h1><%= @course.title %></h1>
-  <% if @course.image %>
-    <%= image_tag @course.image%>
-  <% end %>
+  <%= image_tag @course.image.url unless @course.image.url.nil? %>
   <br />
 
   <div class = "row">
