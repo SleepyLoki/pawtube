@@ -106,3 +106,68 @@ body{
   width: 100%;
   object-fit: cover;
 }
+
+.btn-primary {
+  color: #fff;
+  background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+  border-color: #6E7FF3;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-image: linear-gradient(-225deg, #4a5b91 0%, #6460d7 48%, #8291fe 100%);
+  box-shadow: 0 0 0 3px rgba(71, 83, 197, 0.3);
+  border-color: #6E7FF3;
+}
+
+.btn-info{
+  color: #fff;
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  border-color: #89f7fe;
+}
+
+.btn-info:hover{
+  color: #fff;
+  background-image: linear-gradient(120deg, #a3f8fe 0%, #7ab1fe 100%);
+  box-shadow: 0 0 0 3px rgba(39, 204, 204, 0.3);
+  border-color: #89f7fe;
+}
+
+.btn-danger {
+  color: #fff;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  border-color: #ffb199;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-image: linear-gradient(to top, #fe285c 0%, #fec5b4 100%);
+  box-shadow: 0 0 0 3px rgba(232, 69, 69, 0.3);
+  border-color: #ffb199;
+}
+
+.btn-warning {
+  color: #fff;
+  background-image: linear-gradient(-60deg, #ffb139 0%, #ffca7a 100%);
+  border-color: #ffca7a;
+}
+
+.btn-warning:hover {
+  color: #fff;
+  background-image: linear-gradient(-60deg, #feb94e 0%, #fcd292 100%);
+  border-color: #ffca7a;
+  box-shadow: 0 0 0 3px rgba(255, 202, 122, 0.3);
+}
+
+.btn-success {
+  color: #fff;
+  background-image: linear-gradient(-20deg, #25a734 0%, #33de46 100%);
+  border-color: #33de46;
+}
+
+.btn-success:hover {
+  color: #fff;
+  background-image: linear-gradient(-20deg, #35c145 0%, #42ef56 100%);
+  box-shadow: 0 0 0 3px rgba(46, 204, 64, 0.3);
+  border-color: #42ef56;
+}
