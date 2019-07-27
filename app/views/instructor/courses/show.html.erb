@@ -33,8 +33,9 @@
   <% if current_course.image.url %>
     <%= image_tag current_course.image.url, class: 'img-fluid' %>
   <% end %>
-  <br class = "clr" />
   <br />
+  <%= link_to 'Preview as Student', course_path(current_course), class: 'btn btn-warning float-right' %>
+  <br class = "clr" />
 
   <div class = "text-center">
     <!-- Section Button trigger modal -->
@@ -99,7 +100,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <%= f.submit "Add a Section", class: 'btn btn-primary' %>
+          <%= f.submit "Add a section", class: 'btn btn-primary' %>
         </div>
       <% end %>
     </div>
